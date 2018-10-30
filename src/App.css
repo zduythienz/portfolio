@@ -1,32 +1,224 @@
-.App {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  /* background: url(./assets/images/Mountains_comp.jpg) no-repeat 50% 50%; */
+  /* opacity: 0.5;
+  filter: alpha(opacity=50); */
+  /* background-size: cover; */
+}
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://mlxguv3ljvjp.i.optimole.com/46cd8d1d086535be50654cd563397d18/auto/auto/55/https/demot-vertigostudio.netdna-ssl.com/hestia/wp-content/uploads/sites/89/2017/01/Mountains_comp.jpg)
+    no-repeat 100% 100%;
+}
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 1;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #fff;
+}
+
+.black {
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  /* nav ul {
+    max-height: 0px;
+    background: #000;
+  } */
+
+  /* nav.black ul {
+    background: #fff;
+  } */
+
+  /* .showing {
+    max-height: 34em;
+  } */
+
+  /* nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  } */
+
+  /* .menu-icon {
+    display: block;
+  } */
+}
+
+.container-div-sec1 {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container-title-sect1 {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.title-sec1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.text-big-size {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 4.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-raised {
+  margin: -60px 30px 0;
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
-.App-link {
-  color: #61dafb;
+.main {
+  position: relative;
+  background: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.padding-top-xl {
+  padding-top: 60px;
+}
+.padding-bottom-xl {
+  padding-bottom: 60px;
+}
+.text-center {
+  text-align: center;
+}
+.description {
+  color: #999;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.margin-top-l {
+  margin-top: 24px;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.padding-header-scroll {
+  padding: 5px 40px;
+}
+.margin-header-scroll {
+  margin: 1px 40px;
+}
+.section-image {
+  /* background-position: center center; */
+  background-size: cover;
+  position: relative;
+}
+.fixed-image {
+  overflow: visible;
+  color: #fefefe;
+  background-attachment: fixed;
+}
+/* .section-image::after {
+  display: block;
+  
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+} */
+.overlay-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.text-left {
+  text-align: left;
+}
+.color-p9 {
+  color: #999;
+}
+.padding-bottom-s {
+  padding-bottom: 8px;
+}
+.padding-top-s {
+  padding-top: 8px;
 }
